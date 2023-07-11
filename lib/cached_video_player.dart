@@ -347,6 +347,8 @@ class CachedVideoPlayerController
           break;
         case VideoEventType.unknown:
           break;
+        default:
+          throw UnimplementedError('Unimplemented event type $event');
       }
     }
 
